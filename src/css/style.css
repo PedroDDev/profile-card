@@ -1,0 +1,120 @@
+body {
+    font-family: 'Poppins';
+    overflow-x: hidden;
+    background: #8e49fc;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.main-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1rem 1rem 1rem 1rem;
+    margin: 25px;
+}
+
+.profile-image {
+    margin-bottom: 380px;
+    position: fixed;
+    width: 150px;
+    z-index: 1;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.background-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.content {
+    background-color: #eeebf2;
+    border-radius: 0 0 1rem 1rem;
+    height: 100%;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+.profile-container h2 {
+    text-align: center;
+    color: #363636;
+}
+
+.profile-container h4 {
+    text-align: center;
+    font-weight: normal;
+    color: #858585;
+}
+
+.profile-container p {
+    text-align: justify;
+    color: #858585;
+    margin: 10px;
+    font-size: 12px;
+}
+
+.send-message-button {
+    margin: 0  0 25px;
+}
+
+.link-container {
+    margin: 25px 0 25px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.linkedin-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.github-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.linkedin-icon {
+    width: 75px;
+}
+
+.github-icon {
+    width: 75px;
+}
+
+.linkedin-link h4 {
+    text-align: center;
+    font-weight: normal;
+    color: #b0aeae;
+}
+
+.github-link h4 {
+    text-align: center;
+    font-weight: normal;
+    color: #b0aeae;
+}
