@@ -1,60 +1,54 @@
 body {
     background: #5f4aff;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
     font-family: 'poppins';
     color: #373738;
     overflow-x: hidden;
 }
 
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-}
-
 @keyframes popupImage {
     0% {
-      transform: scale(0.1);
+        transform: scale(0.1);
     }
-    100% {
-      transform: scale(1);
-    }
-  }
 
-.card {
+    100% {
+        transform: scale(1);
+    }
+}
+
+.card-container {
     animation: 1s ease-out 0s 1 popupImage;
     background-color: #fff;
-    width: 500px;
-    height: 800px;
-    border-radius: 50px;
-    position: relative;
+    max-width: 500px;
+    max-height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
     box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-.background-image {
-    border-radius: 50px 50px 0 0;
-    width: 100%;
-    height: 16rem;
-}
-
-.profile {
+.profile-card {
     display: flex;
     flex-direction: column;
-    z-index: 1;
-    margin: 50px;
+    margin: 25px;
     justify-content: center;
     align-items: center;
-
 }
 
-.profile h4 {
+.profile-card h4 {
     color: #a2a2a5;
     font-weight: normal;
 }
 
-.profile p {
-    margin: 25px 10px 0;
+.profile-card h2 {
+    margin-top: 100px;
+}
+
+.profile-card p {
+    margin: 30px 10px 0;
     text-align: justify;
     font-size: 13px;
 }
@@ -64,18 +58,24 @@ main {
     border-radius: 100px;
     position: absolute;
     top: 150px;
+    z-index: 1;
     box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-.links {
+.background-image {
+    width: 100%;
+    height: 200px;
+}
+
+.social-media-row {
     display: flex;
     margin: 25px;
     gap: 35px;
 }
 
-.linkedin-link,
-.whatsapp-link,
-.github-link {
+.linkedin-btn,
+.whatsapp-btn,
+.github-btn {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,35 +83,35 @@ main {
     border-radius: 10px;
 }
 
-.linkedin-link h6,
-.whatsapp-link h6,
-.github-link h6 {
+.linkedin-btn h5,
+.whatsapp-btn h5,
+.github-btn h5 {
     color: #a2a2a5;
     font-weight: normal;
 }
 
-.linkedin-link:hover,
-.whatsapp-link:hover,
-.github-link:hover {
+.linkedin-btn:hover,
+.whatsapp-btn:hover,
+.github-btn:hover {
     background-color: #dadad8;
 }
 
-.linkedin-link:active,
-.whatsapp-link:active,
-.github-link:active {
+.linkedin-btn:active,
+.whatsapp-btn:active,
+.github-btn:active {
     background-color: #bdbdbb;
     transform: scale(0.9);
 
 }
 
 
-.linkedin-icon,
-.whatsapp-icon,
-.github-icon {
+.linkedin-btn img,
+.whatsapp-btn img,
+.github-btn img {
     max-width: 75px;
 }
 
-.send-message-button {
+.send-message-btn {
     background-color: #ffd01a;
     padding: 10px 20px;
     width: 85%;
@@ -123,12 +123,12 @@ main {
     transition: backgrond-color 0.1s ease-in-out, transform 0.2s ease-in-out;
 }
 
-.send-message-button:hover {
+.send-message-btn:hover {
     background-color: #efb10a;
     transform: scale(1.1);
 }
 
-.send-message-button:active {
+.send-message-btn:active {
     background-color: #e8a200;
     transform: scale(1);
 }
